@@ -1,0 +1,33 @@
+#
+# mixture EC DMC and LiPF6
+#
+
+tolerance 2.0
+filetype pdb
+add_box_sides 1
+
+output LiPF6_EC_DMC.pdb
+
+structure Lip1.pdb
+  connect no
+  number 49
+  inside box 0. 0. 0. 40. 40. 40. 
+end structure
+
+structure PF6n1.pdb
+  connect no
+  number 49
+  inside box 0. 0. 0. 40. 40. 40. 
+end structure
+
+structure EC.pdb
+  connect no
+  number 160
+  inside box 0. 0. 0. 40. 40. 40. 
+end structure
+
+structure DMC.pdb
+  connect no
+  number 360
+  inside box 0. 0. 0. 40. 40. 40. 
+end structure

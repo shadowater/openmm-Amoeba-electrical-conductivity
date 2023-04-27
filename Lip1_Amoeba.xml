@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ForceField>
+    <Info/>
+    <AtomTypes>
+        <Type name="421" class="421" element="LI" mass="6.941"/>
+    </AtomTypes>
+    <Residues>
+        <Residue name="LI">
+            <Atom name="LI" type="421"/>
+        </Residue>
+    </Residues>
+    <AmoebaAngleForce angle-cubic="-0.014" angle-quartic="5.6e-05"
+                      angle-pentic="-7e-07" angle-sextic="2.2e-08">
+    </AmoebaAngleForce>
+    <AmoebaOutOfPlaneBendForce type="ALLINGER" opbend-cubic="-0.014"
+                               opbend-quartic="5.6e-05" opbend-pentic="-7e-07"
+                               opbend-sextic="2.2e-08">
+    </AmoebaOutOfPlaneBendForce>
+    <PeriodicTorsionForce>
+    </PeriodicTorsionForce>
+    <AmoebaPiTorsionForce piTorsionUnit="1.0"/>
+    <AmoebaStretchBendForce stretchBendUnit="1.0">
+    </AmoebaStretchBendForce>
+    <AmoebaTorsionTorsionForce/>
+    <AmoebaVdwForce type="BUFFERED-14-7" radiusrule="CUBIC-MEAN"
+                    radiustype="R-MIN" radiussize="DIAMETER" epsilonrule="HHG"
+                    vdw-13-scale="0.0" vdw-14-scale="1.0" vdw-15-scale="1.0">
+        <Vdw class="421" sigma="0.22000000000000003" epsilon="0.276144"
+             reduction="1.0"/>
+    </AmoebaVdwForce>
+    <AmoebaMultipoleForce direct11Scale="0.0" direct12Scale="1.0"
+                          direct13Scale="1.0" direct14Scale="1.0"
+                          mpole12Scale="0.0" mpole13Scale="0.0"
+                          mpole14Scale="0.4" mpole15Scale="0.8"
+                          mutual11Scale="1.0" mutual12Scale="1.0"
+                          mutual13Scale="1.0" mutual14Scale="1.0"
+                          polar12Scale="0.0" polar13Scale="0.0"
+                          polar14Intra="0.5" polar14Scale="1.0"
+                          polar15Scale="1.0">
+        <Multipole type="421" kz="0" kx="0" c0="1.00000" d1="0.0" d2="0.0"
+                   d3="0.0" q11="0.0" q21="0.0" q22="0.0" q31="0.0" q32="0.0"
+                   q33="0.0"/>
+        <Polarize type="421" polarizability="2.8e-05" thole="0.3900"/>
+    </AmoebaMultipoleForce>
+</ForceField>

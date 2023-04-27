@@ -1,0 +1,6 @@
+REMARK  GENERATE LIGAND                                                               
+REMARK   DATE:     4/24/23      9:29: 0      CREATED BY USER: apache 
+CRYST1       20       20       20  90.00  90.00  90.00 P 1           1                    
+ATOM      1  LI  LI  L   1       0.000   0.000   0.000  1.00  0.00          LI 
+TER       2      LI      1
+END

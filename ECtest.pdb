@@ -1,0 +1,15 @@
+REMARK  GENERATE LIGAND                                                               
+REMARK   DATE:     4/24/23      9:27:34      CREATED BY USER: apache       
+CRYST1       20       20       20  90.00  90.00  90.00 P 1           1            
+HETATM    1  O1  EC      1       0.079   1.124   0.159  1.00  0.00           O 
+HETATM    2  O2  EC      1       1.321  -0.722  -0.119  1.00  0.00           O 
+HETATM    3  C1  EC      1       0.054  -0.248   0.128  1.00  0.00           C 
+HETATM    4  O3  EC      1      -0.951  -0.947   0.278  1.00  0.00           O 
+HETATM    5  C2  EC      1       1.423   1.547   0.310  1.00  0.00           C 
+HETATM    6  H1  EC      1       1.549   1.840   1.363  1.00  0.00           H 
+HETATM    7  H2  EC      1       1.591   2.433  -0.321  1.00  0.00           H 
+HETATM    8  C3  EC      1       2.245   0.356  -0.069  1.00  0.00           C 
+HETATM    9  H3  EC      1       2.999   0.097   0.690  1.00  0.00           H 
+HETATM   10  H4  EC      1       2.748   0.443  -1.045  1.00  0.00           H 
+TER      11      EC      1
+END

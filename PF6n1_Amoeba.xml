@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ForceField>
+    <Info/>
+    <AtomTypes>
+        <Type name="411" class="411" element="P" mass="30.974"/>
+        <Type name="412" class="412" element="F" mass="18.998"/>
+    </AtomTypes>
+    <Residues>
+        <Residue name="PF6">
+            <Atom name="P" type="411"/>
+            <Atom name="F1" type="412"/>
+            <Atom name="F2" type="412"/>
+            <Atom name="F3" type="412"/>
+            <Atom name="F4" type="412"/>
+            <Atom name="F5" type="412"/>
+            <Atom name="F6" type="412"/>
+            <Bond from="0" to="1"/>
+            <Bond from="0" to="2"/>
+            <Bond from="0" to="3"/>
+            <Bond from="0" to="4"/>
+            <Bond from="0" to="5"/>
+            <Bond from="0" to="6"/>
+        </Residue>
+    </Residues>
+    <AmoebaBondForce bond-cubic="-25.5" bond-quartic="379.3125">
+        <Bond class1="411" class2="412" length="0.16260" k="146440"/>
+    </AmoebaBondForce>
+    <AmoebaAngleForce angle-cubic="-0.014" angle-quartic="5.6e-05"
+                      angle-pentic="-7e-07" angle-sextic="2.2e-08">
+        <Angle class1="412" class2="411" class3="412" angle1="180" k="0.05098077137550355"/>
+
+    </AmoebaAngleForce>
+    <AmoebaOutOfPlaneBendForce type="ALLINGER" opbend-cubic="-0.014"
+                               opbend-quartic="5.6e-05" opbend-pentic="-7e-07"
+                               opbend-sextic="2.2e-08">
+
+    </AmoebaOutOfPlaneBendForce>
+    <PeriodicTorsionForce>
+    </PeriodicTorsionForce>
+    <AmoebaPiTorsionForce piTorsionUnit="1.0"/>
+    <AmoebaStretchBendForce stretchBendUnit="1.0">
+
+    </AmoebaStretchBendForce>
+    <AmoebaTorsionTorsionForce/>
+    <AmoebaVdwForce type="BUFFERED-14-7" radiusrule="CUBIC-MEAN"
+                    radiustype="R-MIN" radiussize="DIAMETER" epsilonrule="HHG"
+                    vdw-13-scale="0.0" vdw-14-scale="1.0" vdw-15-scale="1.0">
+        <Vdw class="411" sigma="0.45300000000000006" epsilon="1.4644" reduction="1.0"/>
+        <Vdw class="412" sigma="0.322" epsilon="0.50208" reduction="1.0"/>
+    </AmoebaVdwForce>
+    <AmoebaMultipoleForce direct11Scale="0.0" direct12Scale="1.0"
+                          direct13Scale="1.0" direct14Scale="1.0"
+                          mpole12Scale="0.0" mpole13Scale="0.0"
+                          mpole14Scale="0.4" mpole15Scale="0.8"
+                          mutual11Scale="1.0" mutual12Scale="1.0"
+                          mutual13Scale="1.0" mutual14Scale="1.0"
+                          polar12Scale="0.0" polar13Scale="0.0"
+                          polar14Intra="0.5" polar14Scale="1.0"
+                          polar15Scale="1.0">
+        <Multipole type="411" kz="0" kx="0" c0="2.24240"
+                   d1="0" d2="0.0"
+                   d3="0" q11="0"
+                   q21="0.0" q22="0"
+                   q31="0" q32="0"
+                   q33="0"/>
+        <Multipole type="412" kz="411" kx="0" c0="-0.54040"
+                   d1="0" d2="0.0"
+                   d3="-0.000515947780630425" q11="-0.0002024792889177894"
+                   q21="0.0" q22="-0.0002024792889177894"
+                   q31="0" q32="0"
+                   q33="0.0004049585778355788"/>
+
+        <Polarize type="411" polarizability="0.001828" thole="0.3900"
+                  pgrp1="412"/>
+        <Polarize type="412" polarizability="0.000600" thole="0.3900"
+                  pgrp1="411"/>
+
+    </AmoebaMultipoleForce>
+</ForceField>

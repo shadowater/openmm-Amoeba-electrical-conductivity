@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <ForceField>
+    <Info/>
+    <AtomTypes>
+      <Type name="406" class="406" element="C" mass="12.011"/>
+      <Type name="407" class="407" element="O" mass="15.999"/>
+      <Type name="408" class="408" element="O" mass="15.999"/>
+      <Type name="409" class="409" element="H" mass="1.008"/>
+      <Type name="410" class="410" element="C" mass="12.011"/>
+    </AtomTypes>
+      <Residues>
+        <Residue name="DMC">
+            <Atom name="C1" type="406"/>
+            <Atom name="O1" type="407"/>
+            <Atom name="O2" type="408"/>
+            <Atom name="O3" type="408"/>
+            <Atom name="C2" type="410"/>
+            <Atom name="H1" type="409"/>
+            <Atom name="H2" type="409"/>
+            <Atom name="H3" type="409"/>
+            <Atom name="C3" type="410"/>
+            <Atom name="H4" type="409"/>
+            <Atom name="H5" type="409"/>
+            <Atom name="H6" type="409"/>
+            <Bond from="0" to="1"/>
+            <Bond from="0" to="2"/>
+            <Bond from="0" to="3"/>
+            <Bond from="2" to="8"/>
+            <Bond from="3" to="4"/>
+            <Bond from="4" to="5"/>
+            <Bond from="4" to="6"/>
+            <Bond from="4" to="7"/>
+            <Bond from="8" to="9"/>
+            <Bond from="8" to="10"/>
+            <Bond from="8" to="11"/>
+        </Residue>
+    </Residues>
+    <AmoebaBondForce bond-cubic="-25.5" bond-quartic="379.3125">
+      <Bond class1="408" class2="406" length="0.134" k="122476.29313440001"/>
+      <Bond class1="407" class2="406" length="0.122" k="122476.29313440001"/>
+      <Bond class1="410" class2="408" length="0.144" k="132796.03792320003"/>
+      <Bond class1="409" class2="410" length="0.10900000000000001" k="144757.588496"/>
+    </AmoebaBondForce>
+    <AmoebaAngleForce angle-cubic="-0.014" angle-quartic="5.6e-05" angle-pentic="-7e-07" angle-sextic="2.2e-08">
+      <Angle class1="410" class2="408" class3="406" k="0.08410884769947281" angle1="108.4202" inPlane="false"/>
+      <Angle class1="408" class2="406" class3="407" k="0.0694222293359414" angle1="126.24" inPlane="false"/>
+      <Angle class1="408" class2="406" class3="408" k="0.0694222293359414" angle1="109.24019999999999" inPlane="false"/>
+      <Angle class1="409" class2="410" class3="408" k="0.07650964499660526" angle1="108.6" inPlane="false"/>
+      <Angle class1="409" class2="410" class3="409" k="0.04640123495784486" angle1="110.33" inPlane="false"/>
+    </AmoebaAngleForce>
+    <AmoebaOutOfPlaneBendForce type="ALLINGER" opbend-cubic="-0.014" opbend-quartic="5.6e-05" opbend-pentic="-7e-07" opbend-sextic="2.2e-08">
+      <Angle class1="408" class2="406" class3="" class4="" k="0.046267853965695126"/>
+      <Angle class1="407" class2="406" class3="" class4="" k="0.046267853965695126"/>
+    </AmoebaOutOfPlaneBendForce>
+    <PeriodicTorsionForce>
+      <Proper class1="409" class2="410" class3="408" class4="406" k1="-0.110876" phase1="0.0" periodicity1="1" k2="0.140164" phase2="3.141592653589793" periodicity2="2" k3="0.274052" phase3="0.0" periodicity3="3"/>
+      <Proper class1="410" class2="408" class3="406" class4="407" k1="1.334696" phase1="0.0" periodicity1="1" k2="11.890928" phase2="3.141592653589793" periodicity2="2" k3="-1.608748" phase3="0.0" periodicity3="3"/>
+      <Proper class1="410" class2="408" class3="406" class4="408" k1="-1.76774" phase1="0.0" periodicity1="1" k2="11.890928" phase2="3.141592653589793" periodicity2="2" k3="-1.8451440000000001" phase3="0.0" periodicity3="3"/>
+    </PeriodicTorsionForce>
+    <AmoebaPiTorsionForce piTorsionUnit="1.0"/>
+    <AmoebaStretchBendForce stretchBendUnit="1.0">
+      <StretchBend class1="410" class2="408" class3="406" k1="15.579063023240476" k2="-15.579063023240476"/>
+      <StretchBend class1="408" class2="406" class3="407" k1="5.570971871097743" k2="5.570971871097743"/>
+      <StretchBend class1="408" class2="406" class3="408" k1="5.570971871097743" k2="5.570971871097743"/>
+      <StretchBend class1="409" class2="410" class3="408" k1="4.17160192306007" k2="4.17160192306007"/>
+      <StretchBend class1="409" class2="410" class3="409" k1="4.17160192306007" k2="4.17160192306007"/>
+    </AmoebaStretchBendForce>
+    <AmoebaTorsionTorsionForce/>
+    <AmoebaVdwForce type="BUFFERED-14-7" radiusrule="CUBIC-MEAN" radiustype="R-MIN" radiussize="DIAMETER" epsilonrule="HHG" vdw-13-scale="0.0" vdw-14-scale="1.0" vdw-15-scale="1.0">
+      <Vdw class="410" sigma="0.382" epsilon="0.42258400000000007" reduction="1.0"/>
+      <Vdw class="409" sigma="0.28900000000000003" epsilon="0.100416" reduction="0.910"/>
+      <Vdw class="407" sigma="0.33" epsilon="0.468608" reduction="1.0"/>
+      <Vdw class="408" sigma="0.3405" epsilon="0.46024000000000004" reduction="1.0"/>
+      <Vdw class="406" sigma="0.378" epsilon="0.443504" reduction="1.0"/>
+    </AmoebaVdwForce>
+    <AmoebaMultipoleForce direct11Scale="0.0" direct12Scale="1.0" direct13Scale="1.0" direct14Scale="1.0" mpole12Scale="0.0" mpole13Scale="0.0" mpole14Scale="0.4" mpole15Scale="0.8" mutual11Scale="1.0" mutual12Scale="1.0" mutual13Scale="1.0" mutual14Scale="1.0" polar12Scale="0.0" polar13Scale="0.0" polar14Intra="0.5" polar14Scale="1.0" polar15Scale="1.0">
+      <Multipole type="406" kz="-408" kx="-408" c0="0.98272" d1="0.0" d2="0.0" d3="0.012216585090906657" q11="0.00012120567797333096" q21="0.0" q22="-0.0002983423857823338" q31="0.0" q32="0.0" q33="0.0001771367078090028"/>
+      <Multipole type="407" kz="406" kx="408" c0="-0.66642" d1="0.0" d2="0.0" d3="-0.003018426810990712" q11="-0.0003705897440814159" q21="0.0" q22="0.00014764970459623788" q31="0.0" q32="0.0" q33="0.00022294003948517802"/>
+      <Multipole type="408" kz="406" kx="410" c0="-0.38755" d1="0.019896004775530992" d2="0.0" d3="-0.001350989419435359" q11="0.0003328605680807841" q21="0.0" q22="-0.00037371672922743566" q31="-0.0001899900169017465" q32="0.0" q33="4.0856161146651493e-05"/>
+      <Multipole type="410" kz="408" kx="406" c0="0.05933" d1="-0.002660173839209381" d2="0.0" d3="0.010689908837451502" q11="-0.0004190440124186944" q21="0.0" q22="-0.0003878208323785872" q31="-3.853192442617714e-05" q32="0.0" q33="0.0008068648447972816"/>
+      <Multipole type="409" kz="410" kx="408" c0="0.05669" d1="0.000385241009537384" d2="0.0" d3="-0.005561123309379627" q11="1.568159715018837e-05" q21="0.0" q22="2.8002852053907807e-05" q31="-2.2682310163665324e-05" q32="0.0" q33="-4.368444920409618e-05"/>
+      <Polarize type="406" polarizability="0.0020645" thole="0.3900" pgrp1="407" pgrp2="408"/>
+      <Polarize type="407" polarizability="0.0009138" thole="0.3900" pgrp1="406"/>
+      <Polarize type="408" polarizability="0.0008323" thole="0.3900" pgrp1="406"/>
+      <Polarize type="409" polarizability="0.0004803" thole="0.3900" pgrp1="410"/>
+      <Polarize type="410" polarizability="0.0016196" thole="0.3900" pgrp1="409"/>
+    </AmoebaMultipoleForce>
+  </ForceField>
